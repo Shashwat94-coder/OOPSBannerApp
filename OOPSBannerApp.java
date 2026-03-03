@@ -1,29 +1,56 @@
-// UC2 - OOPS Banner App
-// 7 Rows, Each Letter Width = 9 Characters
+// UC3 - OOPS Banner using String.join()
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
         // Row 1
-        System.out.println("  *****       *****      ******       *****  ");
+        System.out.println(String.join("  ",
+                "  *****  ",
+                "  *****  ",
+                " ******  ",
+                "  *****  "));
 
         // Row 2
-        System.out.println(" **     **  **     **   **     **   **     ** ");
+        System.out.println(String.join("  ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** "));
 
         // Row 3
-        System.out.println("**       ****       **  **     **  **        ");
+        System.out.println(String.join("  ",
+                "**     **",
+                "**     **",
+                " **   ** ",
+                "**        "));
 
         // Row 4
-        System.out.println("**       ****       **  ******       *****   ");
+        System.out.println(String.join("  ",
+                "**     **",
+                "**     **",
+                " ******  ",
+                "  *****  "));
 
         // Row 5
-        System.out.println("**       ****       **  **               ** ");
+        System.out.println(String.join("  ",
+                "**     **",
+                "**     **",
+                " **      ",
+                "       **"));
 
         // Row 6
-        System.out.println(" **     **  **     **   **         **     ** ");
+        System.out.println(String.join("  ",
+                " **   ** ",
+                " **   ** ",
+                " **      ",
+                " **   ** "));
 
         // Row 7
-        System.out.println("  *****       *****     **           *****   ");
+        System.out.println(String.join("  ",
+                "  *****  ",
+                "  *****  ",
+                " **      ",
+                "  *****  "));
     }
 }
