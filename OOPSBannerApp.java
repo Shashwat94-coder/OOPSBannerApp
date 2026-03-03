@@ -1,20 +1,29 @@
-/**
- * OOPSBannerApp
- * 
- * This application prints the literal text "OOPS" to the console.
- * It serves as UC1 for the OOPS Banner App project.
- * 
- * @author YourName
- * @version 1.0
- */
+// UC2 - OOPS Banner App
+// 7 Rows, Each Letter Width = 9 Characters
+
 public class OOPSBannerApp {
 
-    /**
-     * Main method - Entry point of the application
-     * 
-     * @param args Command line arguments
-     */
     public static void main(String[] args) {
-        System.out.println("OOPS");
+
+        // Row 1
+        System.out.println("  *****       *****      ******       *****  ");
+
+        // Row 2
+        System.out.println(" **     **  **     **   **     **   **     ** ");
+
+        // Row 3
+        System.out.println("**       ****       **  **     **  **        ");
+
+        // Row 4
+        System.out.println("**       ****       **  ******       *****   ");
+
+        // Row 5
+        System.out.println("**       ****       **  **               ** ");
+
+        // Row 6
+        System.out.println(" **     **  **     **   **         **     ** ");
+
+        // Row 7
+        System.out.println("  *****       *****     **           *****   ");
     }
 }
