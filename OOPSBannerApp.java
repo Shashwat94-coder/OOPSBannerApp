@@ -1,29 +1,59 @@
-// UC2 - OOPS Banner App
-// 7 Rows, Each Letter Width = 9 Characters
+// UC4 - OOPS Banner using String Array and Loop
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Row 1
-        System.out.println("  *****       *****      ******       *****  ");
+        // Create String array to store banner lines
+        String[] banner = new String[7];
 
-        // Row 2
-        System.out.println(" **     **  **     **   **     **   **     ** ");
+        // Populate array using String.join()
 
-        // Row 3
-        System.out.println("**       ****       **  **     **  **        ");
+        banner[0] = String.join("  ",
+                "  *****  ",
+                "  *****  ",
+                " ******  ",
+                "  *****  ");
 
-        // Row 4
-        System.out.println("**       ****       **  ******       *****   ");
+        banner[1] = String.join("  ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** ",
+                " **   ** ");
 
-        // Row 5
-        System.out.println("**       ****       **  **               ** ");
+        banner[2] = String.join("  ",
+                "**     **",
+                "**     **",
+                " **   ** ",
+                "**        ");
 
-        // Row 6
-        System.out.println(" **     **  **     **   **         **     ** ");
+        banner[3] = String.join("  ",
+                "**     **",
+                "**     **",
+                " ******  ",
+                "  *****  ");
 
-        // Row 7
-        System.out.println("  *****       *****     **           *****   ");
+        banner[4] = String.join("  ",
+                "**     **",
+                "**     **",
+                " **      ",
+                "       **");
+
+        banner[5] = String.join("  ",
+                " **   ** ",
+                " **   ** ",
+                " **      ",
+                " **   ** ");
+
+        banner[6] = String.join("  ",
+                "  *****  ",
+                "  *****  ",
+                " **      ",
+                "  *****  ");
+
+        // Print using Enhanced For Loop
+        for (String line : banner) {
+            System.out.println(line);
+        }
     }
 }
