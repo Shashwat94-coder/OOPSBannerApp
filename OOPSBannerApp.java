@@ -1,58 +1,67 @@
-// UC5 - OOPS Banner using Inline Array Initialization
+// UC6 - OOPS Banner using Helper Methods
 
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
 
-        // Declare and initialize array inline
-        String[] banner = {
+        // Get patterns from helper methods
+        String[] oPattern = getOPattern();
+        String[] pPattern = getPPattern();
+        String[] sPattern = getSPattern();
 
-            String.join("  ",
-                "  *****  ",
-                "  *****  ",
-                " ******  ",
-                "  *****  "),
+        // Combine O O P S into final banner
+        String[] banner = new String[7];
 
-            String.join("  ",
-                " **   ** ",
-                " **   ** ",
-                " **   ** ",
-                " **   ** "),
+        for (int i = 0; i < 7; i++) {
+            banner[i] = String.join("  ",
+                    oPattern[i],
+                    oPattern[i],
+                    pPattern[i],
+                    sPattern[i]);
+        }
 
-            String.join("  ",
-                "**     **",
-                "**     **",
-                " **   ** ",
-                "**        "),
-
-            String.join("  ",
-                "**     **",
-                "**     **",
-                " ******  ",
-                "  *****  "),
-
-            String.join("  ",
-                "**     **",
-                "**     **",
-                " **      ",
-                "       **"),
-
-            String.join("  ",
-                " **   ** ",
-                " **   ** ",
-                " **      ",
-                " **   ** "),
-
-            String.join("  ",
-                "  *****  ",
-                "  *****  ",
-                " **      ",
-                "  *****  ")
-        };
-
-        // Enhanced for loop to print
+        // Print using enhanced for loop
         for (String line : banner) {
             System.out.println(line);
         }
+    }
+
+    // Method for O pattern
+    public static String[] getOPattern() {
+        return new String[]{
+                "  *****  ",
+                " **   ** ",
+                "**     **",
+                "**     **",
+                "**     **",
+                " **   ** ",
+                "  *****  "
+        };
+    }
+
+    // Method for P pattern
+    public static String[] getPPattern() {
+        return new String[]{
+                " ******  ",
+                " **   ** ",
+                " **   ** ",
+                " ******  ",
+                " **      ",
+                " **      ",
+                " **      "
+        };
+    }
+
+    // Method for S pattern
+    public static String[] getSPattern() {
+        return new String[]{
+                "  *****  ",
+                " **   ** ",
+                "**        ",
+                "  *****  ",
+                "       **",
+                " **   ** ",
+                "  *****  "
+        };
     }
 }
